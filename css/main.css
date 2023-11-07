@@ -1,0 +1,179 @@
+@charset "utf-8";
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  padding-bottom: 75px;
+  min-height: 100%;
+}
+li {
+  list-style: none;
+}
+p, ul {
+  margin: 0;
+  padding: 0;
+}
+div,li {
+  box-sizing: border-box;
+}
+.header_nav {
+  background: linear-gradient(90deg, #fff 20%, rgba(0,0,0,.6) 60%);
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: stretch;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.global_nav_item {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.global_nav_item:hover {
+  background: #fff;
+  color: #42210b;
+}
+.global_nav {
+  display: flex;
+  align-items: stretch;
+}
+.logo {
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  width: 100%;
+}
+.section_inner {
+  padding: 50px 10% 30px;
+}
+.key {
+  height: 500px;
+  background: center / cover no-repeat url("../images/sample_key.jpg");
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+  
+}
+.key h1{
+  font-size: 2.5rem;
+  margin-top: 150px;/*ここを追加*/
+}
+.section_title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.container{
+  display: flex; /* 水平方向に並べる */
+  justify-content: space-between; /* 均等なスペースを持って配置 */
+}
+.concept_content{
+  width: 60%;
+}
+.concept_image{
+  width: 35%;
+}
+.menu{/*変更点　menuを追加*/
+  background-image: url("../images/sample_menu_bg.jpg"); /* 画像のファイルパスを指定 */
+  background-attachment: fixed;/* 背景画像固定 */
+  background-position: center; /* 画像を中央に配置する */
+  background-size: 90%; /* 画像の大きさ調整 */
+  background-repeat: no-repeat; /* 繰り返しを無効にする */
+}
+.menu_list{
+  display: flex;/* 水平方向に並べる */
+  justify-content: space-between;/* 均等なスペースを持って配置 */
+  flex-wrap: wrap;
+}
+.menu_list_recommended{
+  padding-bottom: 10%;/* 要素の下側の余白を親要素の幅の10%にする */
+}
+.menu_item{
+  width: 49%;/* 要素の幅を親要素の幅の49%にする */
+  display: flex;/* フレックスコンテナ内を横並びにする */
+  flex-direction: row-reverse;/* 横方向に並べたものを逆順にする */
+
+}   
+.menu_list_content{
+  width: 45%;
+  display: flex;
+  flex-direction: column;;/* 縦方向に並べる */
+  justify-content: space-between;/* 均等に配置する */
+  background-color: #fff;/* 背景を白にする */
+  padding: 10px;
+}
+
+.menu_item_title{
+  font-size: 18px;
+}
+.menu_item_price{
+  text-align: right;
+}
+.menu_item_image{
+  height: 300px;/* 高さを300pxに変更 */
+  width: 55%; /* 幅を55%に変更 */
+  object-fit: cover; /* コンテンツが切れる部分は隠す */
+}
+.menu_title {
+  display: inline-block;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.5rem;
+  color: #42210b;
+  border-bottom: solid #42210b 1px;
+  margin-bottom: 20px;
+}
+.center {
+  text-align: center;
+}
+.caffee_menu_image {
+  width: 20%;
+  border-radius: 50%;
+}
+.coffee_menu {
+  padding: 20px;
+  background-color: #fff;
+}
+.coffee_menu_list_item {
+  width: 49%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 10px;
+}
+.caffee_menu_content{
+  width: 80%;
+  padding: 10px;
+}
+.info{
+  display: flex;
+}
+.info_title {
+  width: 80px;
+}
+.footer {
+  background-color: #251e19;
+  height: 75px;
+}
+.footer_nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.footer_nav_item {
+  padding: 0 10px;
+  color: white;
+.footer_logo {
+  width: 80px;
+}
+}
+.footer_right {
+  text-align: center;
+  color: white;
+  font-size: 15px;}
